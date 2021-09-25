@@ -51,7 +51,7 @@ const Profile = () => {
                 <Typography>{account.name}</Typography>
             </Box>
             <Box className={classes.description}>
-                <Typography>This is not your username or pin. This name will be visible to your WhatsApp contacts</Typography>
+                <Typography>Name comes from Google Account. </Typography>
             </Box>
             <Box className={classes.nameContainer}>
                 <Typography>About</Typography>
