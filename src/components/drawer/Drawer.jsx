@@ -20,7 +20,8 @@ const useStyles = makeStyles({
   },
   component: {
     background: '#ededed',
-    height: '87%'
+    height: '87%',
+   
   } 
 });
 

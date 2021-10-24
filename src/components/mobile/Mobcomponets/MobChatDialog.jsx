@@ -1,26 +1,27 @@
 import { useContext, useState } from 'react';
 import { Dialog, makeStyles, withStyles, Box } from '@material-ui/core';
 
-import { UserContext } from '../../context/UserProvider';
+import { UserContext } from '../../../context/UserProvider';
 
 //components
-import Menu from './menu/Menu';
-import ChatBox from './chat/ChatBox';
-import EmptyChat from './chat/EmptyChat';
-import { GroupContext } from '../../context/GroupProvider';
-import GroupChatBox from './chat/GroupComponents/GroupChatbox';
+
+import Menu from '../../chat/menu/Menu';
+
+import ChatBox from '../../chat/chat/ChatBox';
+import EmptyChat from '../../chat/chat/EmptyChat';
+import { GroupContext } from '../../../context/GroupProvider';
+import GroupChatBox from '../../chat/chat/GroupComponents/GroupChatbox';
 
 const useStyles = makeStyles({
     component: {
-        display: 'flex',
-     
+        display: 'flex'
     },
     leftComponent: {
-        minWidth: 380
+        minWidth: "85vw"
     },
     rightComponent: {
-        width: '70%',
-        minWidth: 300,
+        width: "82vw",
+        marginTop: "8px",
         height: '100%',
         borderLeft: '1px solid rgba(0, 0, 0, 0.14)'
     }
@@ -28,7 +29,7 @@ const useStyles = makeStyles({
 
 const style = {
     dialogPaper: {
-        height: '86%',
+        height: '91%',
         width: '82%',
         maxWidth: '100%',
         maxHeight: '100%',
@@ -50,19 +51,25 @@ const ChatDialog = ({ classes }) => {
             classes={{paper: classes.dialogPaper}} 
             BackdropProps={{style: {backgroundColor: 'unset'}}}
         >
-            <Box className={classname.component}>
-                <Box className={classname.leftComponent}>
-                    <Menu viewgroups={viewgroups} setViewGroups={setViewGroups}/>
-                </Box>
-                <Box className={classname.rightComponent}>
-                    {
-                       viewgroups
-                       ? Object.keys(selectedgroup).length? <GroupChatBox/> :<EmptyChat/>
-                       :
-                       Object.keys(person).length  ? <ChatBox/> : <EmptyChat />
-                    }
-                </Box>
+           <Box className={classname.component}>
+           {Object.keys(selectedgroup).length || Object.keys(person).length ?  
+               <Box className={classname.rightComponent}>
+               {
+                  viewgroups
+                  ? Object.keys(selectedgroup).length? <GroupChatBox/> :null
+                  :
+                  Object.keys(person).length  ? <ChatBox/> : null
+               }
             </Box>
+                :
+                <Box className={classname.leftComponent}>
+                <Menu viewgroups={viewgroups} setViewGroups={setViewGroups}/>
+            </Box>
+                
+                
+                
+                }
+        </Box>
         </Dialog>
     )
 }

@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { useContext } from 'react';
-import { Box, Typography, makeStyles } from '@material-ui/core';
-import { Search, MoreVert } from '@material-ui/icons';
+import { Box, Typography, makeStyles,  } from '@material-ui/core';
+import { Search, MoreVert,ArrowBack } from '@material-ui/icons';
 import { UserContext } from '../../../../context/UserProvider';
 import { AccountContext } from '../../../../context/AccountProvider';
+import { GroupContext } from '../../../../context/GroupProvider';
 
 const useStyles = makeStyles({
     header: {
@@ -44,11 +45,17 @@ const GroupHeader = ({ group }) => {
     const url =  'https://www.kindpng.com/picc/m/80-800289_men-users-people-community-team-group-comments-icon.png';
     const {allusers}= useContext(UserContext)
     const { activeUsers } = useContext(AccountContext);
+    const {setSelectedgroup} = useContext(GroupContext)
 
     console.log(activeUsers, "Socket");
 
+    const handleArrow = () =>{
+        setSelectedgroup({})
+}
+
     return (
         <Box className={classes.header}>
+              <ArrowBack className={classes.Arrow} onClick={handleArrow}/>
             <img src={url} alt="display picture"  className={classes.displayPicture} />     
             <Box>
                 <Typography className={classes.name}>{group.groupname}</Typography>   

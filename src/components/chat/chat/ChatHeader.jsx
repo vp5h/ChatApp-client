@@ -1,8 +1,10 @@
 import { useContext } from 'react';
 import { Box, Typography, makeStyles } from '@material-ui/core';
-import { Search, MoreVert } from '@material-ui/icons';
+import { Search, MoreVert, ArrowBack } from '@material-ui/icons';
 
 import { AccountContext } from '../../../context/AccountProvider';
+
+import { UserContext } from '../../../context/UserProvider';
 
 const useStyles = makeStyles({
     header: {
@@ -34,6 +36,9 @@ const useStyles = makeStyles({
         fontSize: 12,
         color: 'rgb(0, 0, 0, 0.6)',
         marginLeft: 10
+    },
+    Arrow:{
+        color: '#919191'
     }
 });
 
@@ -41,13 +46,18 @@ const ChatHeader = ({ person }) => {
     const classes = useStyles();    
 
     const url = person.imageUrl || 'https://static.straitstimes.com.sg/s3fs-public/articles/2020/12/01/af_moneyheist_011220.jpg';
-    
+    const { setPerson } = useContext(UserContext);
     const { activeUsers } = useContext(AccountContext);
 
     console.log(activeUsers, "Socket");
 
+    const handleArrow = () =>{
+            setPerson({})
+    }
+
     return (
         <Box className={classes.header}>
+            <ArrowBack className={classes.Arrow} onClick={handleArrow}/>
             <img src={url} alt="display picture"  className={classes.displayPicture} />     
             <Box>
                 <Typography className={classes.name}>{person.name}</Typography>   

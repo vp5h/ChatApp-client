@@ -10,7 +10,7 @@ import { UserContext } from '../../../context/UserProvider';
 const useStyles = makeStyles({
     component: {
         overflow: 'overlay',
-        height: '78vh'
+        height: '70vh'
     },
     divider: {
         margin: '0 0 0 67px',

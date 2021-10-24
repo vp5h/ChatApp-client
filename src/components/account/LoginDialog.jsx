@@ -34,7 +34,7 @@ const useStyle = makeStyles({
 const style = {
     dialogPaper: {
         marginTop: '12%',
-        height: '95%',
+        height: '91%',
         width: '60%',
         maxWidth: '100%',
         maxHeight: '100%',

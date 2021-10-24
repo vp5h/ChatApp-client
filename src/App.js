@@ -7,6 +7,7 @@ import GroupProvider from './context/GroupProvider';
 import TemplateProvider from './templates/TemplateProvider';
 import Loader from './components/loader/Loader';
 
+
 const Messenger = lazy(() => import('./components/Messenger'));
 
 function App() {
