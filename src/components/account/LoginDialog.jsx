@@ -98,7 +98,7 @@ const LoginDialog = ({ classes }) => {
                         { showloginButton ?
                             <GoogleLogin
                                 clientId={clientId}
-                                buttonText=""
+                                buttonText="Sign In with Google"
                                 onSuccess={onLoginSuccess}
                                 onFailure={onLoginFailure}
                                 cookiePolicy={'single_host_origin'}
@@ -115,7 +115,7 @@ const LoginDialog = ({ classes }) => {
                         }
                     </div>
                     <div style={{justifyContent: 'center', display: 'flex', fontSize: '2.4vh', marginTop: '9vh'}}>
-                            Log In with Google Account to Converse with the World
+                            Log In to Converse with the World
                     </div>
                     <div style={{ display: "flex", justifyContent: "center", padding: "3vh"}} >Made by Pravesh</div>
 
@@ -124,7 +124,7 @@ const LoginDialog = ({ classes }) => {
 
 
                     <div className="footer-header" style={{ display: "flex", justifyContent: "center", paddingTop: "3vh"}} >Socials</div>
-                    <ul   style={{ display: "flex", justifyContent: "space-around", margin: '0'}}>
+                    <ul style={{ display: "flex", justifyContent: "space-around", margin: '0', padding: '0'}}>
                         <li className="list-item-inline" style={{ display: "inline", padding: "2vh"}}>
                             <a className="link" href="https://github.com/vp5h">
                             <FontAwesomeIcon icon={faGithub} />
