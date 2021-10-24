@@ -1,10 +1,26 @@
 # ChatApp
 
 
-A chat App which involves 
-one to one messages, Group Chats, Group creation among all the users, Live Chats with Sockets, History using DB and Backend
+A chat App where users can do Real time Chats.
 
 
+## Features
+
+Realtime Communication
+
+One on One and Group Converstions
+
+User Can Create New Groups
+
+Search
+
+Live Status of the other User
+
+Chat History
+
+Sigin With Google
+
++ Responsive UI
 
 ## Tech
 
