@@ -4,7 +4,7 @@
 A chat App where users can do Real time Chats.
 
 
-[Notes on Critcal Features](https://vp5h.notion.site/ChatApp-5f5fb63400d64478ba8ae5ec2f54121a)
+[Notes on Critical Features](https://vp5h.notion.site/ChatApp-5f5fb63400d64478ba8ae5ec2f54121a)
 
 ## Features
 
