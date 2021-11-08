@@ -8,7 +8,9 @@ const useStyle = makeStyles(theme => ({
         background: '#f8f9fa',
         padding: '50px 0',
         textAlign: 'center',
-        height: '100%'
+        height: '70vh',
+        width:"auto",
+        overflowX: "hidden"
     },
     container: {
         display: "flex",
