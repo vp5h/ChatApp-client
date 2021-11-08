@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     },
     rightComponent: {
         width: "82vw",
-        marginTop: "8px",
+        
         height: '100%',
         borderLeft: '1px solid rgba(0, 0, 0, 0.14)'
     }
@@ -35,7 +35,7 @@ const style = {
         maxHeight: '100%',
         borderRadius: 0,
         boxShadow: 'none',
-        overflow: 'hidden'
+        // overflow: 'hidden'
     }
 };
 

@@ -10,7 +10,8 @@ import Groups from './Groups'
 const useStyles = makeStyles({
     menu :{
         display: 'flex',
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        height: 29
         
 
     }

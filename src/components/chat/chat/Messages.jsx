@@ -24,7 +24,7 @@ const useStyles = makeStyles({
         // bottom: 0
     },
     component: {
-        height: '70vh',
+        height: '72vh',
         overflowY: 'scroll'
     },
     container: {

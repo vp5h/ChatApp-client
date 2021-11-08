@@ -28,13 +28,14 @@ const useStyles = makeStyles({
 
 const style = {
     dialogPaper: {
-        height: '86%',
-        width: '82%',
+        
+        height: '90vh',
+        width: '80vw',
         maxWidth: '100%',
         maxHeight: '100%',
         borderRadius: 0,
         boxShadow: 'none',
-        overflow: 'hidden'
+        // overflow: 'overlay',
     }
 };
 

@@ -6,7 +6,7 @@ import { Box, makeStyles, InputBase } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     footer: {
-        marginTop: '17px',
+        // marginTop: '17px',
         height: '55px',
         background: '#ededed',
         // position: 'absolute',
