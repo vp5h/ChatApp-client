@@ -11,7 +11,7 @@ import { getUsers } from '../../../service/api';
 const useStyles = makeStyles({
     component: {
         overflow: 'overlay',
-        height: '72vh'
+        height: 'calc(90vh - 130px)',
     },
     divider: {
         margin: '0 0 0 67px',

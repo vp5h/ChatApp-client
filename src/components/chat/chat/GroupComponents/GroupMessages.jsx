@@ -25,11 +25,11 @@ const useStyles = makeStyles({
         // bottom: 0
     },
     component: {
-        height: '72vh',
+        height: 'calc(90vh - 110px)',
         overflowY: 'scroll'
     },
     container: {
-        padding: '1px 10px'
+        padding: '0.5vh 2vw'
     }
 })
 

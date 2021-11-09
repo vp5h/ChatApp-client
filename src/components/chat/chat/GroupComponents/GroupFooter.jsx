@@ -7,10 +7,10 @@ import { Box, makeStyles, InputBase } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     footer: {
         // marginTop: '17px',
-        height: '72px',
+        height: '55px',
         background: '#ededed',
         // position: 'absolute',
-        width: '100%',
+        width: 'auto',
         bottom: 0,
         display: 'flex',
         alignItems: 'center',

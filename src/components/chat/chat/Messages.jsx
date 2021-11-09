@@ -21,11 +21,13 @@ const useStyles = makeStyles({
         background: '#ededed',
         // position: 'absolute',
         width: '100%',
-        // bottom: 0
+        bottom: 0
     },
     component: {
-        height: '72vh',
-        overflowY: 'scroll'
+        height: 'calc(90vh - 110px)',
+        overflowY: 'scroll',
+        // maxHeight: "60vh",
+        // minHeight: "70vh",
     },
     container: {
         padding: '0.5vh 2vw'

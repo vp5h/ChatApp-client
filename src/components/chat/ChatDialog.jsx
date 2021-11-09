@@ -35,7 +35,7 @@ const style = {
         maxHeight: '100%',
         borderRadius: 0,
         boxShadow: 'none',
-        // overflow: 'overlay',
+        overflow: 'overlay',
     }
 };
 
