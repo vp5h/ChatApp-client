@@ -17,7 +17,7 @@ const useStyles = makeStyles({
         display: 'flex'
     },
     leftComponent: {
-        minWidth: "85vw"
+        minWidth: "82vw"
     },
     rightComponent: {
         width: "82vw",
@@ -29,8 +29,8 @@ const useStyles = makeStyles({
 
 const style = {
     dialogPaper: {
-        height: '91%',
-        width: '82%',
+        height: '90vh',
+        width: '82vw',
         maxWidth: '100%',
         maxHeight: '100%',
         borderRadius: 0,
