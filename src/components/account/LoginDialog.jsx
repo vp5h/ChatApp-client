@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import { Dialog } from '@material-ui/core';
-import { makeStyles, Typography, List, ListItem, Box, withStyles, useMediaQuery } from '@material-ui/core';
+import { makeStyles, Box, withStyles, Button } from '@material-ui/core';
 
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -82,6 +82,19 @@ const LoginDialog = ({ classes }) => {
     const handleClose = () => {
         setOpen(false)
     }
+    const handleGuest=()=>{
+           
+            let Guestuser = {
+                "googleId": "106163040983357473320",
+                "imageUrl": "https://lh3.googleusercontent.com/a-/AOh14GgeFcrng2pQ6T8qz11J2F2PjnLQmAQ9sLU2BwYu=s96-c",
+                "email": "vp5hhhhh@gmail.com",
+                "name": "V_p5h",
+                "givenName": "V_p5h"
+            }
+            setAccount(Guestuser);
+            setShowloginButton(false);
+            setShowlogoutButton(true);
+    }
 
     return (
         <Dialog onClose={handleClose}
@@ -113,17 +126,23 @@ const LoginDialog = ({ classes }) => {
                             >
                             </GoogleLogout> : null
                         }
+
                     </div>
-                    <div style={{justifyContent: 'center', display: 'flex', fontSize: '2.4vh', marginTop: '9vh'}}>
+                    <Box >
+                        <div style={{justifyContent: 'center', display: 'flex',  padding: "3vh", marginTop:"2vh"}}>
+                        <Button variant="contained" onClick={handleGuest}>Guest login</Button>
+                        </div>
+                        </Box>
+                    <div style={{justifyContent: 'center', display: 'flex', padding: "2vh", marginTop:"2vh"}}>
                             Log In to Converse with the World
                     </div>
-                    <div style={{ display: "flex", justifyContent: "center", padding: "3vh"}} >Made by Pravesh</div>
+                    <div style={{ display: "flex", justifyContent: "center", padding: "1vh", marginBottom:"2vh"}} >Made by Pravesh</div>
 
                     <footer className="footer" style={{ display: "flex", justifyContent: "center", flexDirection: "column"}}>
 
 
 
-                    <div className="footer-header" style={{ display: "flex", justifyContent: "center", paddingTop: "3vh"}} >Socials</div>
+                    <div className="footer-header" style={{ display: "flex", justifyContent: "center", paddingTop: "1vh"}} >Socials</div>
                     <ul style={{ display: "flex", justifyContent: "space-around", margin: '0', padding: '0'}}>
                         <li className="list-item-inline" style={{ display: "inline", padding: "2vh"}}>
                             <a className="link" href="https://github.com/vp5h">
