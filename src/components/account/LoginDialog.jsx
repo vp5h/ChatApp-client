@@ -84,16 +84,18 @@ const LoginDialog = ({ classes }) => {
     }
     const handleGuest=()=>{
            
-            let Guestuser = {
+            let Guestuser = 
+            {"profileObj":{
                 "googleId": "106163040983357473320",
                 "imageUrl": "https://lh3.googleusercontent.com/a-/AOh14GgeFcrng2pQ6T8qz11J2F2PjnLQmAQ9sLU2BwYu=s96-c",
                 "email": "vp5hhhhh@gmail.com",
                 "name": "V_p5h",
                 "givenName": "V_p5h"
-            }
-            setAccount(Guestuser);
-            setShowloginButton(false);
-            setShowlogoutButton(true);
+            }}
+            // setAccount(Guestuser);
+            // setShowloginButton(false);
+            // setShowlogoutButton(true);
+            onLoginSuccess(Guestuser)
     }
 
     return (
