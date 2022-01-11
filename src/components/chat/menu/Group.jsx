@@ -42,7 +42,7 @@ const useStyles = makeStyles({
 
 export const Group = ({group})=>{
     const classes = useStyles();
-    const url = 'https://www.kindpng.com/picc/m/80-800289_men-users-people-community-team-group-comments-icon.png';
+    const url = 'https://image.shutterstock.com/image-vector/user-group-icon-logo-260nw-796864096.jpg';
 
     const { selectedgroup, setSelectedgroup } = useContext(GroupContext);
     const { account }  = useContext(AccountContext);
